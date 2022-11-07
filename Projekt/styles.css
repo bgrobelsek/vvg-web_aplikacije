@@ -41,12 +41,11 @@ body {
 .content {
   position: fixed;
   margin: 0;
-  height: 80%;
+  width: 100%;
 }
 
 .myContainer {
-  margin-left: 10px;
-  width: 99%;
+  padding: 10px;
   height: 80vh;
 }
 
@@ -59,6 +58,13 @@ ul {
 
 li {
   float: left;
+}
+
+button {
+  background: #FFD814;
+  margin-top: 10px;
+  width: 200px;
+  margin-left: 100px;
 }
 
 /* Footer */
@@ -91,18 +97,24 @@ footer a:hover {
 }
 
 /* Form */
-
-form {
-  width: 300px;
-  float: top;
+.myForm {
+  height: 53vh;
 }
-input,
-textarea,
+input[type="text"], 
+textarea, 
+[type="email"],
 select {
+  background-color: goldenrod;
+}
+input, textarea, select {
+  width: 400px;
+  padding: 5px;
   display: block;
-  width: 200px;
-  margin: 0px;
 }
 label {
   font-weight: bold;
 }
+form ::placeholder {
+  color: black;
+}
+
