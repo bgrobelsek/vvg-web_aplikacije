@@ -1,21 +1,57 @@
 /* Video background */
-#myVideo {
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   position: fixed;
+  left: 0;
   right: 0;
+  top: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  z-index: -1;
 }
 
-/* Logo */
-.myLogo {
-  width: 430px;
-  padding: 10px;
-  margin-left: 10px;
+body {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Main div's */
+.container {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px green;
+}
+
+.content {
+  flex-basis: 50%;
+  color: rgb(255, 153, 0);
+}
+
+.landingLogo {
+  text-align: center;
+  animation: fadeIn 8s;
+  padding: 400px;
+}
+
+.landingLogo a {
+  color: white;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 22px;
+}
+
+.landingLogo p {
+  text-align: center;
+  color:  goldenrod;
+}
+
+@keyframes fadeIn { 
+  0% { opacity: 0; } 
+  100% { opacity: 1; }
 }
 
 /* Navigation bar */
-.myNavigation a {
+nav a {
   color: rgb(161, 109, 32);
   font-size: 30px;
   font-family: "Titillium Web", sans-serif;
@@ -23,32 +59,16 @@
   margin-left: 5px;
   margin: 5px;
 }
-.myNavigation a:hover {
+nav a:hover {
   color: black;
   background: goldenrod;
 }
 
-.myContent {
-  text-align: center;
+nav {
+  margin: 2px;
 }
 
-body {
-  color: goldenrod;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-}
-
-.content {
-  position: fixed;
-  margin: 0;
-  width: 100%;
-}
-
-.myContainer {
-  padding: 10px;
-  height: 80vh;
-}
-
+/* Lists */
 ul {
   list-style-type: none;
   margin: 0;
@@ -60,33 +80,7 @@ li {
   float: left;
 }
 
-button {
-  background: #FFD814;
-  margin-top: 10px;
-  width: 200px;
-  margin-left: 100px;
-}
-
-/* Footer */
-.myFooter {
-  height: 20vh;
-}
-footer {
-  text-align: center;
-}
-footer ul {
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 2rem;
-}
-footer a:hover {
-  color: goldenrod;
-}
-
-/* GRADIENT LINE */
+/* Gradient line */
 .gradient {
   background: linear-gradient(
     90deg,
@@ -96,25 +90,89 @@ footer a:hover {
   height: 2px;
 }
 
-/* Form */
-.myForm {
-  height: 53vh;
-}
-input[type="text"], 
-textarea, 
-[type="email"],
-select {
-  background-color: goldenrod;
-}
-input, textarea, select {
-  width: 400px;
-  padding: 5px;
-  display: block;
-}
-label {
-  font-weight: bold;
-}
-form ::placeholder {
-  color: black;
+.gradient2 {
+  background: linear-gradient(
+    90deg,
+    rgba(121, 92, 9, 96) 100%,
+    rgba(2, 0, 36, 100) 0%
+  );
+  height: 2px;
 }
 
+/* Images */
+.liquidGif {
+  float: left;
+  margin: 0px 10px 10px 0px;
+}
+
+.myLogo {
+  width: 450px;
+  margin: 5px;
+}
+
+/* Footer */
+.myFooter {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.myFooter ul {
+  display: inline-block;
+  margin: 5px;
+}
+
+.myFooter li {
+  margin: 12px;
+}
+
+.myFooter p {
+  color: rgba(231, 227, 207, 0.721);
+}
+
+span {
+  font-size: 45px;
+}
+
+.myFooter a {
+  color: rgba(214, 176, 21, 0.721);
+}
+
+.myFooter a :hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Forms */ 
+.myForm input, textarea, select {
+  display: block;
+  width: 30%;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.myForm select {
+  color: rgb(255, 153, 0);
+  background-color: black;
+}
+
+.myForm {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.myForm textarea {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.myForm button {
+  width: 30%;
+  background-color: goldenrod;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
