@@ -29,6 +29,11 @@ body {
   margin: 10px;
 }
 
+.about-video {
+  padding: 20px;
+  text-align: center;
+}
+
 /* Blurred background for content */ 
 .blurred {
   -webkit-backdrop-filter: blur(2px);
@@ -37,11 +42,6 @@ body {
 
 .contentImage {
   border: 2px solid gold;
-}
-
-.about-video {
-  text-align: center;
-  padding: 30px;
 }
 
 /* Main div's */
@@ -74,7 +74,7 @@ body {
   flex-direction: row;
   gap: 40px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
 }
 
