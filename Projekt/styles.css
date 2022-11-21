@@ -13,6 +13,35 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 153, 0);
+}
+
+.news-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 10px;
+}
+
+.news-content img {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+}
+
+/* Blurred background for content */ 
+.blurred {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(20px);
+}
+
+.contentImage {
+  border: 2px solid gold;
+}
+
+.about-video {
+  text-align: center;
+  padding: 30px;
 }
 
 /* Main div's */
@@ -20,11 +49,6 @@ body {
   display: flex;
   flex-direction: column;
   border: solid 1px green;
-}
-
-.content {
-  flex-basis: 50%;
-  color: rgb(255, 153, 0);
 }
 
 .landingLogo {
@@ -43,6 +67,21 @@ body {
 .landingLogo p {
   text-align: center;
   color:  goldenrod;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-content img {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
 }
 
 @keyframes fadeIn { 
@@ -101,13 +140,59 @@ li {
 
 /* Images */
 .liquidGif {
+  border: 1px solid goldenrod;
   float: left;
+  padding: 2px;
   margin: 0px 10px 10px 0px;
+}
+
+.liquidGif p {
+  text-align: center;
 }
 
 .myLogo {
   width: 450px;
   margin: 5px;
+}
+
+.news-article-picture {
+  border: 1px solid goldenrod;
+  float: left;
+  padding: 2px;
+  margin: 0px 10px 10px 0px;
+}
+
+.news-article-picture img {
+  width: 300px;
+  height: 150px;
+}
+
+.news-picture {
+  border: solid 1px goldenrod;
+}
+
+.news-picture p {
+  text-align: center;
+}
+
+/* News navigation */
+.newsNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsGifs {
+  padding: 12px;
+  margin: 0px 10px 10px 0px;
+}
+
+.newsGifs img {
+  width: 350px;
+  height: 200px;
+}
+
+.newsContent a {
+  color: rgb(255, 183, 0);
 }
 
 /* Footer */
@@ -175,4 +260,29 @@ span {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Utils */
+
+.anchor-tag a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.anchor-tag a:hover {
+  color: blanchedalmond;
+}
+
+.dosbox {
+  text-align: center;
+}
+
+.dosbox-container {  
+  margin: auto;
+  width: 800px; 
+  height: 500px; 
+}
+
+.dosbox-container > .dosbox-overlay { 
+  background: url(https://js-dos.com/cdn/DOOM.png); 
 }

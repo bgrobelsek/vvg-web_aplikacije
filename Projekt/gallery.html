@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bruno Grobelšek">
-    <link rel=stylesheet type="text/css" href="/Projekt/styles.css">
-    <title>IT Solutions</title>
-</head>
-<body> 
-    <video autoplay muted loop id="myVideo">
-        <source src="./assets/Fluid.mp4" type="video/mp4">
-      </video>
-
-<header>
-    <div class="content">
-    <h1 color="white">IT solutions</h1>
-    <nav>
-        <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bruno Grobelšek" />
+    <link rel="stylesheet" type="text/css" href="/Projekt/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="/Projekt/assets/icon.png" >
+    <title>Liquid Solutions</title>
+  </head>
+<body>
+  <video 
+    id="background-video" 
+    autoplay loop muted>
+    <source src="/Projekt/assets/Fluid.mp4" type="video/mp4"></video>
+  <div class="containter">
+    <!----------------------->
+    <!----Header && Logo----->
+    <!----------------------->
+    <header class="myHeader">
+      <div class="logo">
+        <a href="/Projekt/index.html"><img
+          src="/Projekt/assets/logo.png"
+          alt="logo"
+          tag="logo"
+          class="myLogo"
+          /></a>
+      </div>
+        <nav>
+          <ul>
             <li>
                 <a href="/Projekt/home.html">Home</a>
             </li>
             <li>
-                <a href="/Projekt/news.html">News</a> 
+                <a href="/Projekt/news.html">News</a>
             </li>
             <li>
                 <a href="/Projekt/contact.html">Contact</a>
@@ -33,10 +51,96 @@
             <li>
                 <a href="/Projekt/gallery.html">Gallery</a>
             </li>
-        </ul>
-    </nav>
-</div>  
+          </ul>
+      </nav>
+      <div class="gradient"></div>
+    </header>
+    <!----------------------->
+    <!--------Content-------->
+    <!----------------------->
+    <div class="blurred">
+        <div class="anchor-tag">
+            <a href="/Projekt/news.html"><h4> Back to News << </h4></a>
+            </div>
+            <div class="gallery-content">
+                <div class="news-picture">
+                  <img src="/Projekt/assets/news-gifs/news-1.gif" />
+                  <p>This is a description</p>
+                </div>
+                <div class="news-picture">
+                  <img src="/Projekt/assets/news-gifs/news-2.gif" />
+                  <p>This is a description</p>
+                </div>
+                <div class="news-picture">
+                  <img src="/Projekt/assets/news-gifs/news-3.gif" />
+                  <p>This is a description</p>
+                </div>
+                <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-2.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-3.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-2.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-3.gif" />
+                    <p>This is a description</p>
+                  </div>
+                  <div class="news-picture">
+                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
+                    <p>This is a description</p>
+                  </div>
+            </div>
 
-</header>
+        
+        
+    </div>
+    <div class="gradient"></div>
+    <!----------------------->
+    <!--------Footer--------->
+    <!----------------------->
+    <footer class="myFooter">
+        <p>
+          &copy; 2022 Bruno Grobelšek. All rights reserved.
+       </p>
+        <ul>
+          <li>
+            <a
+              href="https://hr.linkedin.com/in/bruno-grobel%C5%A1ek-70b67b17b"
+              target="_blank"
+              >
+              <span class="fab fa-linkedin" aria-hidden="true"></span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/8string" target="_blank">
+            <span class="fab fa-github" aria-hidden="true"></span>
+            <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:b.grobelsek@gmail.com">
+            <span class="fas fa-envelope" arria-hidden="true"></span>
+            <span class="sr-only">Email</span>
+            </a>
+          </li>
+        </ul>
+    </footer>
+</div>
+
 </body>
 </html>
