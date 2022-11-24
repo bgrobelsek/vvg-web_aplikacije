@@ -34,6 +34,8 @@ body {
 .about-video {
   padding: 20px;
   text-align: center;
+  width: "800"; 
+  height: "350";
 }
 
 /* Blurred background for content */ 
@@ -52,14 +54,18 @@ body {
   flex-direction: column;
 }
 
-.landingLogoDiv {
+.landingLogo {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .landingLogo {
   animation: fadeIn 8s;
+}
+
+.landingLogo img {
+  padding-top: 50%;
+  width: 80%;
 }
 
 .landingLogo a {
@@ -70,7 +76,7 @@ body {
 }
 
 .landingLogo p {
-  color:  goldenrod;
+  color: rgb(245, 206, 147);
   text-align: center;
   background-color: transparent;
 }
