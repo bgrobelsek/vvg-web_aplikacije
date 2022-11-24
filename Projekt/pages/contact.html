@@ -27,7 +27,7 @@
     <!----------------------->
     <header class="myHeader">
       <div class="logo">
-        <a href="/Projekt/index.html"><img
+        <a href="/Projekt/home.html"><img
           src="/Projekt/assets/logo.png"
           alt="logo"
           tag="logo"
@@ -37,19 +37,19 @@
         <nav>
           <ul>
             <li>
-                <a href="/Projekt/home.html">Home</a>
+                <a href="/Projekt/pages/home.html">Home</a>
             </li>
             <li>
-                <a href="/Projekt/news.html">News</a>
+                <a href="/Projekt/pages/news.html">News</a>
             </li>
             <li>
-                <a href="/Projekt/contact.html">Contact</a>
+                <a href="/Projekt/pages/contact.html">Contact</a>
             </li>
             <li>
-                <a href="/Projekt/about.html">About</a>
+                <a href="/Projekt/pages/about.html">About</a>
             </li>
             <li>
-                <a href="/Projekt/gallery.html">Gallery</a>
+                <a href="/Projekt/pages/gallery.html">Gallery</a>
             </li>
           </ul>
       </nav>
@@ -58,55 +58,42 @@
     <!----------------------->
     <!--------Content-------->
     <!----------------------->
-    <div class="blurred">
-        <div class="anchor-tag">
-            <a href="/Projekt/home.html"><h4> Back to Home << </h4></a>
-            </div>
-            <div class="gallery-content">
-                <div class="news-picture">
-                  <img src="/Projekt/assets/news-gifs/news-1.gif" />
-                  <p>This is a description</p>
-                </div>
-                <div class="news-picture">
-                  <img src="/Projekt/assets/news-gifs/news-2.gif" />
-                  <p>This is a description</p>
-                </div>
-                <div class="news-picture">
-                  <img src="/Projekt/assets/news-gifs/news-3.gif" />
-                  <p>This is a description</p>
-                </div>
-                <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-2.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-3.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-2.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-3.gif" />
-                    <p>This is a description</p>
-                  </div>
-                  <div class="news-picture">
-                    <img src="/Projekt/assets/news-gifs/news-1.gif" />
-                    <p>This is a description</p>
-                  </div>
-            </div>
-
-        
-        
+    <div class="content">
+      <div class="anchor-tag">
+        <a href="/Projekt/pages/home.html"><h4> Back to Home << </h4></a>
+        </div>
+      <div class="frameAndFooter">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88945.78578177938!2d15.894292274400195!3d45.840174554917105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d692c902cc39%3A0x3a45249628fbc28a!2sZagreb!5e0!3m2!1shr!2shr!4v1667834035988!5m2!1shr!2shr" 
+        width="100%" 
+        height="350"  
+        allowfullscreen="" 
+        referrerpolicy="no-referrer-when-downgrade"
+        >
+      </iframe>
+      <div class="myForm">
+        <form>
+          <label for="firstname">First Name *</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your first name...">
+              <label for="lastname">Last Name *</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Your last name...">
+              <label for="lastname">Your E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="Your e-mail">         
+            <!-- Select -->
+          <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="PS">Please select</option>
+              <option value="HR">Croatia</option>
+              <option value="IT">Italy</option>
+              <option value="SP">Spain</option>
+              <option value="FR">France</option>
+            </select>
+            <!-- Text input -->
+            <label for="message" id="message">Message</label>
+            <textarea rows="5" placeholder="Write something..." name="message"></textarea>
+            <button>Submit</button>
+          </form>
+      </div>
     </div>
     <div class="gradient"></div>
     <!----------------------->

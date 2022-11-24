@@ -13,8 +13,10 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
-  color: rgb(255, 153, 0);
+  color: rgb(245, 206, 147);
+  margin: 2rem;
 }
+
 
 .news-content {
   display: flex;
@@ -48,30 +50,35 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  border: solid 1px green;
+}
+
+.landingLogoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .landingLogo {
-  text-align: center;
   animation: fadeIn 8s;
-  padding: 400px;
 }
 
 .landingLogo a {
-  color: white;
   text-decoration: none;
   font-family: "Titillium Web", sans-serif;
   font-size: 22px;
 }
 
 .landingLogo p {
-  text-align: center;
   color:  goldenrod;
+  text-align: center;
 }
 
 .gallery-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -91,7 +98,7 @@ body {
 
 /* Navigation bar */
 nav a {
-  color: rgb(161, 109, 32);
+  color: rgb(245, 206, 147);
   font-size: 30px;
   font-family: "Titillium Web", sans-serif;
   text-decoration: none;
@@ -140,7 +147,7 @@ li {
 
 /* Images */
 .liquidGif {
-  border: 1px solid goldenrod;
+  border: 1px solid rgb(221, 177, 66);
   float: left;
   padding: 2px;
   margin: 0px 10px 10px 0px;
@@ -195,6 +202,10 @@ li {
   color: rgb(255, 183, 0);
 }
 
+.newsContent a:hover {
+  color: blueviolet;
+}
+
 /* Footer */
 .myFooter {
   flex-basis: 20%;
@@ -237,7 +248,7 @@ span {
 }
 
 .myForm select {
-  color: rgb(255, 153, 0);
+  color: rgb(243, 203, 143);
   background-color: black;
 }
 
@@ -258,6 +269,10 @@ span {
   font-weight: bold;
 }
 
+.myForm button:hover {
+  color: rgb(244, 226, 199);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -266,11 +281,11 @@ html {
 
 .anchor-tag a {
   text-decoration: none;
-  color: blueviolet;
+  color: rgb(245, 206, 147);
 }
 
 .anchor-tag a:hover {
-  color: blanchedalmond;
+  color: blueviolet;
 }
 
 .dosbox {

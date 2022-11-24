@@ -60,9 +60,8 @@
     <!----------------------->
     <!--------DOOM-------->
     <!----------------------->
-    <div class="blurred">
       <div class="anchor-tag">
-        <a href="/Projekt/news.html"><h4> Back to News << </h4></a>
+        <a href="/Projekt/pages/news.html"><h4> Back to News << </h4></a>
       </div>
       <div class="content">
       
@@ -70,21 +69,21 @@
         <div id="dosbox"></div>
       <br/>
      
-   <script type="text/javascript" 
-    src="https://js-dos.com/cdn/js-dos-api.js">
-  </script>
+      <script type="text/javascript" 
+        src="https://js-dos.com/cdn/js-dos-api.js">
+      </script>
 
-    <script type="text/javascript">
-      var dosbox = new Dosbox({
-        id: "dosbox",
-        onload: function (dosbox) {
-          dosbox.run("upload/DOOM-@evilution.zip", "./doom");
-        },
-        onrun: function (dosbox, app) {
-         console.log("App '" + app + "' is runned");
-         }
-       });
-     </script>
+      <script type="text/javascript">
+        var dosbox = new Dosbox({
+          id: "dosbox",
+          onload: function (dosbox) {
+            dosbox.run("upload/DOOM-@evilution.zip", "./doom");
+          },
+          onrun: function (dosbox, app) {
+          console.log("App '" + app + "' is runned");
+          }
+        });
+      </script>
 
     <div class="gradient"></div>
     <!----------------------->
