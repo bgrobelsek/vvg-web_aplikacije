@@ -66,11 +66,13 @@ body {
   text-decoration: none;
   font-family: "Titillium Web", sans-serif;
   font-size: 22px;
+  background-color: transparent;
 }
 
 .landingLogo p {
   color:  goldenrod;
   text-align: center;
+  background-color: transparent;
 }
 
 .gallery-content {
