@@ -13,8 +13,9 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
-  color: rgb(245, 206, 147);
+  color: rgb(236, 214, 180);
   margin: 2rem;
+  font-size: 21px;
 }
 
 
@@ -54,28 +55,21 @@ body {
   flex-direction: column;
 }
 
-.landingLogo {
+.landingLogoDiv {
   display: flex;
   justify-content: center;
 }
 
 .landingLogo {
   animation: fadeIn 8s;
-}
-
-.landingLogo img {
-  padding-top: 50%;
-  width: 80%;
+  margin-top: 15%;
 }
 
 .landingLogo a {
   text-decoration: none;
   font-family: "Titillium Web", sans-serif;
-  font-size: 22px;
+  font-size: 32px;
   background-color: transparent;
-}
-
-.landingLogo p {
   color: rgb(245, 206, 147);
   text-align: center;
   background-color: transparent;
@@ -164,6 +158,10 @@ li {
   text-align: center;
 }
 
+.liquidGif img {
+  padding: 5px;
+}
+
 .myLogo {
   width: 450px;
   margin: 5px;
@@ -206,7 +204,7 @@ li {
 }
 
 .newsContent a {
-  color: rgb(255, 183, 0);
+  color: rgb(239, 172, 71);
 }
 
 .newsContent a:hover {
@@ -301,8 +299,8 @@ html {
 
 .dosbox-container {  
   margin: auto;
-  width: 800px; 
-  height: 500px; 
+  width: 1000px; 
+  height: 700px; 
 }
 
 .dosbox-container > .dosbox-overlay { 
