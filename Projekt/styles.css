@@ -16,6 +16,7 @@ body {
   color: rgb(236, 214, 180);
   margin: 2rem;
   font-size: 21px;
+  background-color: transparent;
 }
 
 
@@ -62,7 +63,11 @@ body {
 
 .landingLogo {
   animation: fadeIn 8s;
-  margin-top: 15%;
+  margin-top: 20%;
+}
+
+.landingLogo img {
+  width: 1000px;
 }
 
 .landingLogo a {
