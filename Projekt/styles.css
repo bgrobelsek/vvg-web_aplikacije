@@ -11,6 +11,9 @@
   z-index: -1;
 }
 
+
+
+/* Body */
 body {
   font-family: "Titillium Web", sans-serif;
   color: rgb(236, 214, 180);
@@ -19,37 +22,7 @@ body {
   background-color: transparent;
 }
 
-.news-content {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  padding-top: 10px;
-}
-
-.news-content img {
-  width: 300px;
-  height: 150px;
-  margin: 10px;
-}
-
-.about-video {
-  padding: 20px;
-  text-align: center;
-  width: "800"; 
-  height: "350";
-}
-
-/* Blurred background for content */ 
-.blurred {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(20px);
-}
-
-.contentImage {
-  border: 2px solid gold;
-}
-
-/* Main div's */
+/* Main */
 .container {
   display: flex;
   flex-direction: column;
@@ -58,6 +31,11 @@ body {
 .landingLogoDiv {
   display: flex;
   justify-content: center;
+}
+
+.landingLogoDiv a:hover {
+  color: rgb(245, 206, 147);
+  font-weight: bold;
 }
 
 .landingLogo {
@@ -79,6 +57,28 @@ body {
   background-color: transparent;
 }
 
+/* News */
+.news-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 10px;
+}
+
+.news-content img {
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+}
+
+.about-video {
+  padding: 20px;
+  text-align: center;
+  width: "800"; 
+  height: "350";
+}
+
+/* Gallery */
 .gallery-content {
   display: flex;
   flex-direction: row;
@@ -131,7 +131,7 @@ li {
   float: left;
 }
 
-/* Gradient line */
+/* Gradient lines */
 .gradient {
   background: linear-gradient(
     90deg,
@@ -169,6 +169,10 @@ li {
 .myLogo {
   width: 450px;
   margin: 5px;
+}
+
+.contentImage {
+  border: 2px solid gold;
 }
 
 .news-article-picture {
@@ -282,11 +286,11 @@ span {
   color: rgb(244, 226, 199);
 }
 
+
+/* Utils */
 html {
   scroll-behavior: smooth;
 }
-
-/* Utils */
 
 .anchor-tag a {
   text-decoration: none;
